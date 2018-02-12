@@ -257,7 +257,7 @@ public class Calculator {
                 System.out.println("Делить на ноль нельзя!!!");
             }
             catch (Exception e) {
-                System.out.println("невалидное вырожение!!!!");
+                System.out.println("невалидное выражение!!!!");
             }
 
 
