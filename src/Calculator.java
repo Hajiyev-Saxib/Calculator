@@ -244,8 +244,13 @@ public class Calculator {
     public static void main(String args[])  {
         while(true) {
             Scanner in = new Scanner(System.in);
-            System.out.println("Введите выражение:");
+            System.out.println("Введите выражение(пустая строка выход из программы):");
+
             String expression = in.nextLine();
+            if(expression.equals(""))
+            {
+                break;
+            }
             expression.replace('.',',');//заменяем все точки на запятые
 
             try {
@@ -257,7 +262,7 @@ public class Calculator {
                 System.out.println("Делить на ноль нельзя!!!");
             }
             catch (Exception e) {
-                System.out.println("невалидное вырожение!!!!");
+                System.out.println("невалидное выражение!!!!");
             }
 
 
